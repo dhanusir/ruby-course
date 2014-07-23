@@ -2,31 +2,45 @@
 # --------------------------------------------------------------------------
 
 # 1. Write a method to swap two variables. 
-# def method(a, b)
-#   Your code here....
-# end
+def method(a,b)
+    temp=a
+    a=b
+    b=temp
+    puts "#{a},#{b}"
+end
+method(2,3)
+
+OR
+
+def method(a,b)
+    a=a+b
+    b=a-b
+    a=a-b
+    puts "#{a},#{b}"
+end
+method(2,3)
 
 
 
 # 2. Write any one use case of === operator.
-# Your answer here...
+name1="john"
+name2="jeccy"
+puts name1==name2
 
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
-
+("a".."z").to_a
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
-
+puts "Ho! "*3+"Merry Christmas!"
 
 
 # 5. Write a ruby program that perform following operations:
-#    a. Ask user his/her name
-#    b. Ask user his/her age
-#    c. Finally, print result in the form
-#       "Your name is <user's name>"
-#       "Your age is <user's age>"
-# Your answer here...
+print "Enter your name:"
+user_name=gets.chomp
+print "Enter your age:"
+user_age=gets.chomp
+puts "Your name is #{user_name}"
+puts "Your age is #{user_age}"
