@@ -3,23 +3,13 @@
 
 # 1. Write a method to swap two variables.
  def method(a, b)
-  puts "Values before Swapping = "
-  puts "a = #{a} and b = #{b}"
   # code for swaping two variable without using temp variable
   a = a + b
   b = a - b
   a = a - b
-  puts "Values after swapping"
-  puts "a = #{a} and b = #{b}"
+  [a ,b ]
  end
-method(10,20)
-=begin
-Output:
-Values before Swapping =
-a = 10 and b = 20
-Values after swapping =
-a = 20 and b = 10
-=end
+x , y = method(10,20)
 
 
 # 2. Write any one use case of === operator.
