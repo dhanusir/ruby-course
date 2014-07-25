@@ -3,7 +3,9 @@
 
 # 1. Write a method to swap two variables. 
 # def method(a, b)
-#   Your code here....
+# x=a
+# a=b
+# b=x   
 # end
 
 
@@ -14,12 +16,14 @@
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
+# ans 
+@array=["a".."m"]
 
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
+# Ans
+"#{'Ho! '*3}Merry Christmas!"
 
 
 
@@ -29,4 +33,9 @@
 #    c. Finally, print result in the form
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
-# Your answer here...
+# Ans:
+Puts "What is your name?"
+name=gets
+Puts "What is your age?"
+age=gets
+Puts "Hello" +name "your age is "+age
