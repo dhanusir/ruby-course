@@ -25,7 +25,7 @@ method(2,3)
 # 2. Write any one use case of === operator.
 name1="john"
 name2="jeccy"
-puts name1==name2
+puts name1===name2
 
 
 
