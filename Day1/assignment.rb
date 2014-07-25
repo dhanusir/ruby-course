@@ -6,7 +6,7 @@ def method(a,b)
     temp=a
     a=b
     b=temp
-    puts "#{a},#{b}"
+   return a,b
 end
 method(2,3)
 
@@ -16,7 +16,7 @@ def method(a,b)
     a=a+b
     b=a-b
     a=a-b
-    puts "#{a},#{b}"
+    return a,b
 end
 method(2,3)
 
