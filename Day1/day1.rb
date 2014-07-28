@@ -118,18 +118,6 @@ s1 = 'Hello'
 s2 = 'Hello'
 s3 = s1
 
-puts s1 == s2
-puts s1.eql?(s2)
-puts s1.equal?(s2)
-puts s1.equal?(s3)
-
-# Using %w, %q
-names1 = ['ann', 'richard', 'william', 'susan', 'pat']
-puts names1[1]
-
-names2 = %w{ann richard william susan pat}
-puts names2[1]
-
 
 
 
