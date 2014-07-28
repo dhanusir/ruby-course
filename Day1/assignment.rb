@@ -1,25 +1,33 @@
-# Day 1 : Assignments
-# --------------------------------------------------------------------------
-
-# 1. Write a method to swap two variables. 
-# def method(a, b)
-#   Your code here....
-# end
+# 1. Write a method to swap two variables.
+ def swap(a, b)
+  puts "Before Swap: #{ a }"
+  puts "Before Swap: #{ b }"
+    c = b
+    b = a
+    a = c
+  puts "After Swap A = #{a}"
+  puts "After Swap B = #{b}"
+end
+swap(10,20)
 
 
 
 # 2. Write any one use case of === operator.
-# Your answer here...
-
+def equal_op
+n=(1..50)
+n1 = n === 5
+return n1
+end
+equal_op
+(1...10)===5
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
-
-
+alpha = ('a'..'z').to_a
+puts "Alphabets = #{alpha}"
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
+puts 'Ho!' * 3 + ' Merry Christmas!'
 
 
 
@@ -29,4 +37,11 @@
 #    c. Finally, print result in the form
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
-# Your answer here...
+#
+puts 'Please enter your name?'
+name = gets
+puts 'Please enter your age?'
+age = gets
+puts "Your name is: #{ name }."
+puts "Your age is: #{ age }"
+
