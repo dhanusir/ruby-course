@@ -31,3 +31,7 @@ end
 # eg. a = [1, 2, 3]
 # a.each_with_index { |n, index| .... }
 # Here, n = element of array & index = index of element in array
+
+# Question5
+# str = 'Hello Ruby!!!'
+# Write code to store str into array as ['Hello fun', 'Ruby!!! fun']

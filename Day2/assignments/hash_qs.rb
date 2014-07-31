@@ -1,6 +1,5 @@
 # Refer - http://www.ruby-doc.org/core-2.1.2/Hash.html
 
-
 # Question1
 languages = {
   'ruby' => 'awesome',
@@ -8,7 +7,6 @@ languages = {
   'java' => "don't know"
 }
 # Return the value that corresponds with the "ruby" key.
-
 
 # Question2
 # Print value of browsers[:favorite]
@@ -22,7 +20,6 @@ browsers = {
 # Use the cities hash to print out the following strings:
 # "santa_cruz is chill"
 # "new_york is intense"
-# You can use String interpolation.
 
 cities = { santa_cruz: 'chill', new_york: 'intense' }
 
@@ -33,5 +30,3 @@ cities = { santa_cruz: 'chill', new_york: 'intense' }
 box = { height: 10.5 }
 puts box.fetch(:size)
 puts box[:size]
-
-
