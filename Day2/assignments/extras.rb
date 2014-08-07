@@ -2,12 +2,12 @@
 # the answer in space provided for assignment 2.
 
 # Assignment 1
-Write a program like process.rb that processes the string
+# Write a program like process.rb that processes the string
 
-s = "Ruby is nice.\nRuby is cool.\nRuby is awesome.\n"
+# s = "Ruby is nice.\nRuby is cool.\nRuby is awesome.\n"
 
-a line at a time.
-The expected output is:
+# a line at a time.
+# The expected output is:
 $> ruby process.rb                    # file line is s = "Ruby is nice ....."
 Line 1: Ruby is nice.
 Line 2: Ruby is cool.
