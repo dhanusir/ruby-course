@@ -41,6 +41,8 @@ puts "Ho! "*3+"Merry Christmas!"
 print "Enter your name:"
 user_name=gets.chomp
 print "Enter your age:"
-user_age=gets.chomp
+user_age=gets.chomps
 puts "Your name is #{user_name}"
 puts "Your age is #{user_age}"
+
+
