@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # Refer - http://www.ruby-doc.org/core-2.1.2/Hash.html
 
 # Question1
@@ -21,18 +22,16 @@ browsers = {
 p browsers[:favorite]
 # Output is = :firefox
 
-
 # Question3
 # Use the cities hash to print out the following strings:
 # "santa_cruz is chill"
 # "new_york is intense"
 
 cities = { santa_cruz: 'chill', new_york: 'intense' }
-cities.each{ |x, y| p "#{x.to_s} is #{y}"}
+cities.each { |x, y| p "#{ x } is #{ y }" }
 # Outputs is :
 # "santa_cruz is chill"
 # "new_york is intense"
-
 
 # Question4
 # Only for practice:
