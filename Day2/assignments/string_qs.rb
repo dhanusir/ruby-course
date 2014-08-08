@@ -8,7 +8,7 @@
 # Check the 'sprintf' documentation and the % documentation in the String class
 # and write one line code to print exact following line
 # "1$ = Rs60.48"
-sprintf("1$ = %g","60.48")
+printf("1$ = %g","60.48")
 # Question4
 # What is the problem with the following code? Correct it and puts.
 # my variable = 'Mr. White'
