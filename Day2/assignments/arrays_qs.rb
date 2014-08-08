@@ -3,26 +3,47 @@
 # Question1
 # Declare one array arr1 and method with array as parameter
 # return sum of elements in arr1 using each loop
+
+array1=[1,4]
 def sum_of_arr(arr)
-  # do whatever you want...
+sum=0
+ arr.each do |arr_element|
+   sum+=arr_element
+ end
+ return sum
 end
+sum_of_arr(array1)
 
 # Question2
 # Following method 'push_elements_into_array' accepts two parameters
 # 1. array & 2. new_element which user want to insert into array
 # Method will return array with new element.
 # Add new_element into array using 'push' method of Array
+
+array=[1,2]
+puts 'Enter new element in array,you want? '
+new_element=gets.chomp
 def push_elements_into_array(arr, ele)
-  # you can do it.. :-)
+   return arr.push ele
 end
+push_elements_into_array(array,new_element)
+
 
 # Question3
 # Pass array to below method
 # Iterate on array and puts each element from array
 # using 'pop' method of Array
+array=[1,2,0,5,3]
 def pop_from_array(arr)
-  # you can do it.. :-)
+ length=arr.length
+  i=0
+  loop do
+    puts arr.pop()
+    i+=1
+  break if i>=length
+  end
 end
+pop_from_array(array)
 
 # Question4
 # a. Declare one array b. sort the array using 'sort' method
@@ -31,7 +52,15 @@ end
 # eg. a = [1, 2, 3]
 # a.each_with_index { |n, index| .... }
 # Here, n = element of array & index = index of element in array
+b=[2,14,7,5,10]
+b.sort
+b.reverse
+puts b[4]
 
 # Question5
 # str = 'Hello Ruby!!!'
 # Write code to store str into array as ['Hello fun', 'Ruby!!! fun']
+str = 'Hello Ruby!!!'
+arr=str.split(' ')
+arr.map{|word| "#{word} fun"}
+
