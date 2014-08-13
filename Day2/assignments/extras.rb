@@ -16,14 +16,13 @@
 s = "Ruby is nice.\nRuby is cool.\nRuby is awesome.\n"
 string_array = s.split("\n")
 i = 0
-def strin_element(arr)
-arr.each do |string_array_ele|
+
+string_array.each do |string_array_ele|
   i += 1
   str = i.to_s
-  retu 'Line ' + str + ': ' + string_array_ele
+  puts 'Line ' + str + ': ' + string_array_ele
 end
-end
-string_element(string_array)
+
 # Assignment 2
 # Run the following two code(try irb or create different files) and try and
 # find the difference in the outputs of the two programs.
