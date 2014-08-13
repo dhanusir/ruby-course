@@ -73,11 +73,3 @@ foo foo foo foo foo
 foo foo foo foo foo
 foo foo foo foo foo
 
-count=0
-File.readlines('G:\ruby-course\Day2\assignments\word_matrix.txt').each do |line|
-if count==3
-puts line + 'foo'
-else
-puts line
-end
-count+=1
