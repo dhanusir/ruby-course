@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Refer - http://www.ruby-doc.org/core-2.1.2/Hash.html
 
 # Question1
@@ -7,7 +8,7 @@ languages = {
   'java' => "don't know"
 }
 def hash(ar)
-   return  ar['ruby']
+  ar['ruby']
 end
 hash(languages)
 # Return the value that corresponds with the "ruby" key.
@@ -27,8 +28,8 @@ print browsers[:favorite]
 # "new_york is intense"
 
 cities = { santa_cruz: 'chill', new_york: 'intense' }
-cities.each do |x,y|
-    puts "#{x}"+ " is "+ "#{y}"
+cities.each do |x, y|
+  puts "#{x}" + 'is ' + "#{y}"
 end
 
 # Question4

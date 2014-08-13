@@ -1,16 +1,17 @@
+# encoding :utf-8
 # Refer - http://www.ruby-doc.org/core-2.1.2/Array.html
 
 # Question1
 # Declare one array arr1 and method with array as parameter
 # return sum of elements in arr1 using each loop
 
-array1=[1,4]
+array1 = [1, 4]
 def sum_of_arr(arr)
-sum=0
- arr.each do |arr_element|
-   sum+=arr_element
- end
- return sum
+  sum = 0
+  arr.each do |arr_element|
+    sum += arr_element
+  end
+  sum
 end
 sum_of_arr(array1)
 
@@ -20,27 +21,26 @@ sum_of_arr(array1)
 # Method will return array with new element.
 # Add new_element into array using 'push' method of Array
 
-array=[1,2]
+array = [1, 2]
 puts 'Enter new element in array,you want? '
-new_element=gets.chomp
+new_element = gets.chomp
 def push_elements_into_array(arr, ele)
-   return arr.push ele
+  arr.push ele
 end
-push_elements_into_array(array,new_element)
-
+push_elements_into_array(array, new_element)
 
 # Question3
 # Pass array to below method
 # Iterate on array and puts each element from array
 # using 'pop' method of Array
-array=[1,2,0,5,3]
+array = [1, 2, 0, 5, 3]
 def pop_from_array(arr)
- length=arr.length
-  i=0
+  length = arr.length
+  i = 0
   loop do
-    puts arr.pop()
-    i+=1
-  break if i>=length
+    puts arr.pop
+    i += 1
+    break if i >= length
   end
 end
 pop_from_array(array)
@@ -52,7 +52,7 @@ pop_from_array(array)
 # eg. a = [1, 2, 3]
 # a.each_with_index { |n, index| .... }
 # Here, n = element of array & index = index of element in array
-b=[2,14,7,5,10]
+b = [2, 14, 7, 5, 10]
 b.sort
 b.reverse
 puts b[4]
@@ -61,6 +61,5 @@ puts b[4]
 # str = 'Hello Ruby!!!'
 # Write code to store str into array as ['Hello fun', 'Ruby!!! fun']
 str = 'Hello Ruby!!!'
-arr=str.split(' ')
-arr.map{|word| "#{word} fun"}
-
+arr = str.split(' ')
+arr.map { |word| "#{word} fun" }
