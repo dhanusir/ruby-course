@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Refer - http://www.ruby-doc.org/core-2.1.2/Hash.html
 
 # Question1
@@ -6,6 +7,10 @@ languages = {
   'javascript' => 'weird, but cool',
   'java' => "don't know"
 }
+def hash(ar)
+  ar['ruby']
+end
+hash(languages)
 # Return the value that corresponds with the "ruby" key.
 
 # Question2
@@ -15,6 +20,7 @@ browsers = {
   favorite: :firefox,
   worst: :internet_explorer
 }
+print browsers[:favorite]
 
 # Question3
 # Use the cities hash to print out the following strings:
@@ -22,6 +28,9 @@ browsers = {
 # "new_york is intense"
 
 cities = { santa_cruz: 'chill', new_york: 'intense' }
+cities.each do |x, y|
+  puts "#{x}" + 'is ' + "#{y}"
+end
 
 # Question4
 # Only for practice:
