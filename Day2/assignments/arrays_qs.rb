@@ -4,8 +4,15 @@
 # Declare one array arr1 and method with array as parameter
 # return sum of elements in arr1 using each loop
 def sum_of_arr(arr)
-  # do whatever you want...
+  arrsum = 0
+  arr.each do |ele|
+    arrsum += ele
+  end
+  arrsum
 end
+
+arr1 = [1, 2, 3, 4, 5]
+puts "Sum of array elements is : #{sum_of_arr(arr1)}"
 
 # Question2
 # Following method 'push_elements_into_array' accepts two parameters
@@ -13,16 +20,27 @@ end
 # Method will return array with new element.
 # Add new_element into array using 'push' method of Array
 def push_elements_into_array(arr, ele)
-  # you can do it.. :-)
+  arr.push(ele)
 end
+
+arr = [1, 2, 3, 4, 5]
+puts "Array before inserting element : #{arr}"
+puts "Array after inserting element : #{push_elements_into_array(arr, 6)}"
 
 # Question3
 # Pass array to below method
 # Iterate on array and puts each element from array
 # using 'pop' method of Array
 def pop_from_array(arr)
-  # you can do it.. :-)
+  (0...arr.size).each do
+    puts arr.pop
+  end
 end
+
+arr = [1, 2, 3, 4, 5]
+puts "Array contains elements before pop : #{arr}"
+pop_from_array(arr)
+puts "Array contains elements after pop : #{arr}"
 
 # Question4
 # a. Declare one array b. sort the array using 'sort' method
@@ -31,7 +49,20 @@ end
 # eg. a = [1, 2, 3]
 # a.each_with_index { |n, index| .... }
 # Here, n = element of array & index = index of element in array
+arr = [12, 0, 58, 5, 99, 63]
+puts "Original array : #{arr}"
+arr = arr.sort
+puts "Array after sorting : #{arr}"
+arr = arr.reverse
+puts "Reversing the array : #{arr}"
+puts "4th indexed element is : #{arr[4]}"
 
 # Question5
 # str = 'Hello Ruby!!!'
 # Write code to store str into array as ['Hello fun', 'Ruby!!! fun']
+str = 'Hello Ruby!!!'
+arr = Array[]
+str.split(' ').each do|c|
+  arr = arr.push(c + ' fun')
+end
+print arr
