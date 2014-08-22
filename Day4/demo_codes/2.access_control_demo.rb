@@ -7,16 +7,16 @@ class Person
   end
 
   def compare_age(object)
-    if object.age > age
-      "The #{object.name}'s age is bigger than #{self.name}."
+    if object.get_age > get_age
+      "The #{object.name}'s age is bigger than #{name}'s age."
     else
-      "The #{object.name}'s age is same or smaller than #{self.name}."
+      "The #{object.name}'s age is same or smaller than #{name}'s age."
     end
   end
 
   protected
 
-  def age
+  def get_age
     @age
   end
 
@@ -25,14 +25,17 @@ class Person
   def update_age(age)
     @age = age
   end
+
+  # protected :get_age, :age.
+  # private :update_age
 end
 
 ram = Person.new('Ram', 25)
-rahul = Person.new('Rahul', 34)
+rahul = Person.new('Rahul', 35)
 puts ram.compare_age(rahul)
 
 begin
-  puts "#{ram.name} is checking his age: #{ram.age}"
+  puts "#{ram.name} is checking his age: #{ram.get_age}"
 rescue StandardError => e
   puts e.message
 end

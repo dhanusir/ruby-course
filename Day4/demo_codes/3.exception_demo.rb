@@ -7,19 +7,19 @@ end
 
 begin
   raise_exception
-rescue Exception => e
+rescue Exception => e           # similar to Java's catch(Exception e)
   puts "Error: #{e.message}"
 end
 
 puts ''
 puts '2. Raise specific exception ===================>'
-def inverse(x)
-  raise ArgumentError, 'Argument is not numeric' unless x.is_a? Numeric
-  1.0 / x
+def inverse(num)
+  raise ArgumentError, 'Argument is not numeric' unless num.is_a? Numeric
+  1.0 / num
 end
 
 begin
-  puts inverse(2)
+  puts "Inverse of 2 is : #{inverse(2)}"
   puts inverse('not a number')
 rescue ArgumentError => e
   puts "ArgumentError: #{e.message}"
