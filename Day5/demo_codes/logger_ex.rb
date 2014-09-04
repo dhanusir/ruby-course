@@ -5,17 +5,16 @@ Logger.new('this_month.log', 'monthly')
 # Keep data for today and the past 20 days.
 Logger.new('application.log', 20, 'daily')
 
-
-$LOG = Logger.new('log_file.log', 'monthly')
-$LOG.level = Logger::ERROR
 def divide(numerator, denominator)
-  $LOG.debug("Numerator: #{numerator}, denominator #{denominator}")
+  log = Logger.new('log_file.log', 'monthly')
+  log.level = Logger::ERROR
+  log.debug("Numerator: #{numerator}, denominator #{denominator}")
   begin
     result = numerator / denominator
-  rescue Exception => e
-    $LOG.error "Error in division!: #{e}"
+  rescue => e
+    log.error "Error in division!: #{e}"
     result = nil
   end
-  return result
+  result
 end
 divide(10, 2)
