@@ -1,10 +1,10 @@
 # Day 1 : Assignments
 # --------------------------------------------------------------------------
 
-# 1. Write a method to swap two variables. 
-# def method(a, b)
-#   Your code here....
-# end
+# 1. Write a method to swap two variables.
+def method(a, b)
+  my_cde
+end
 
 
 
