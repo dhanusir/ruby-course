@@ -2,24 +2,26 @@
 # --------------------------------------------------------------------------
 
 # 1. Write a method to swap two variables. 
-# def method(a, b)
-#   Your code here....
-# end
+def swap(a,b)
+a,b = b,a
+end
 
 
 
 # 2. Write any one use case of === operator.
-# Your answer here...
+Used to test equality within a when clause of a case statement.
+ex: (1...10) === 5 
+=> it returns true.
 
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
+puts ('a'..'z').to_a
 
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
+print "Ho! "*3 + "Merry Christmas!"
 
 
 
@@ -30,3 +32,9 @@
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
 # Your answer here...
+
+print "Enter Your Name :"
+name = gets
+print "Enter Your age :"
+age = gets
+print "Your Name is : " + name + "Your Age is : " + age
