@@ -13,10 +13,16 @@ swap_num(10,20)
   
 
 
-
-
 # 2. Write any one use case of === operator.
-#
+str = 'fifty'
+str === 50
+=> false
+
+str === 'Fifty'
+=> false
+
+str === 'fifty'
+=> true
 
 
 
@@ -26,7 +32,8 @@ swap_num(10,20)
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-
+'Ho! '*3+"Merry Christmas!"
+=>Ho! Ho! Ho! Merry Christmas!
 
 
 
@@ -36,4 +43,13 @@ swap_num(10,20)
 #    c. Finally, print result in the form
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
+def demo_func()
+  puts "Enter Your Name"
+  name = gets.chomp
+  puts "Enter Your Age"
+  age = gets.chomp
+  puts "hey #{name} of age #{age}"
+end
+demo_func()
+=> Hey Rakesh of age 28
 
