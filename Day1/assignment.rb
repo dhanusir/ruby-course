@@ -2,26 +2,31 @@
 # --------------------------------------------------------------------------
 
 # 1. Write a method to swap two variables.
-def method(a, b)
-  my_cde
+
+def swap(a, b)
+	a,b=[b,a]
+	[a,b]
 end
 
 
 
 # 2. Write any one use case of === operator.
-# Your answer here...
+
+def find(a)
+	(1..10)===a
+end
 
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
 
-
+alph = ('a'..'z').to_a
+puts "#{alph}"
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
 
-
+str = 'Ho! '*3 +'Merry Christmas'
+puts str
 
 # 5. Write a ruby program that perform following operations:
 #    a. Ask user his/her name
@@ -29,4 +34,13 @@ end
 #    c. Finally, print result in the form
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
-# Your answer here...
+
+#---------- using method----------------
+def getAndShow()
+	puts "Enter your name"
+	name = gets()
+	puts "Enter your Age"
+	age = gets()
+	puts "Your name is #{name}"
+	puts "Your Age is #{age}"
+end
