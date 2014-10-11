@@ -4,8 +4,8 @@
 # 1. Write a method to swap two variables.
 
 def swap(a, b)
-	a,b=[b,a]
-	[a,b]
+	a, b = [b, a]
+	[a, b]
 end
 
 
@@ -13,7 +13,7 @@ end
 # 2. Write any one use case of === operator.
 
 def find(a)
-	(1..10)===a
+	(1..10) === a
 end
 
 
