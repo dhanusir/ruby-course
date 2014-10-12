@@ -4,7 +4,11 @@
 # Declare one array arr1 and method with array as parameter
 # return sum of elements in arr1 using each loop
 def sum_of_arr(arr)
-  # do whatever you want...
+	sum=0
+	arr.each do |i|
+		sum += i
+	end
+	sum
 end
 
 # Question2
@@ -13,7 +17,9 @@ end
 # Method will return array with new element.
 # Add new_element into array using 'push' method of Array
 def push_elements_into_array(arr, ele)
-  # you can do it.. :-)
+	
+	arr.push(ele)
+	arr
 end
 
 # Question3
@@ -21,7 +27,9 @@ end
 # Iterate on array and puts each element from array
 # using 'pop' method of Array
 def pop_from_array(arr)
-  # you can do it.. :-)
+	while(0 < arr.length())
+	puts arr.pop()
+	end
 end
 
 # Question4
@@ -35,3 +43,9 @@ end
 # Question5
 # str = 'Hello Ruby!!!'
 # Write code to store str into array as ['Hello fun', 'Ruby!!! fun']
+str = 'Hello Ruby!!!'
+str = str.split(" ")
+str[0] += ' Fun'
+str[1] += 'Fun'
+str
+
