@@ -1,16 +1,14 @@
 # Day 1 : Assignments
 # --------------------------------------------------------------------------
 
-# 1. Write a method to swap two variables. 
-def swap_num(a,b)
- temp=a
- a=b
- b=temp
- puts a
- puts b
- end
-# end
-
+# 1. Write a method to swap two variables.  
+def swap(a, b)
+  a += b
+  b = a - b
+  a -= b
+  puts "a = #{a} b = #{b}"
+  end
+swap(3, 5)
 
 
 # 2. Write any one use case of === operator.
@@ -26,8 +24,9 @@ alphabets=Array('a'..'z')
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
 # Your answer here...
-str="Ho! Ho! Ho! Merry Christmas!"
-puts "#{str}"
+str = 'Ho! ' * 3
+print "#{str} Merry Christmas!"
+
 
 
 # 5. Write a ruby program that perform following operations:
@@ -37,9 +36,10 @@ puts "#{str}"
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
 # Your answer here...
-puts "Enter your name"
-name= gets
-puts "Enter  your age"
-age=gets
+print 'Enter your name: '
+name = gets
+print 'Enter your age: '
+age = gets
 puts "Your name is #{name}"
 puts "Your age is #{age}"
+
