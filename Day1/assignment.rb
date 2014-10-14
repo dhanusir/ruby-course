@@ -21,12 +21,11 @@ end
 # 3. Print array of alphabates using Range operator.
 
 alph = ('a'..'z').to_a
-puts "#{alph}"
+print alph
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
 
-str = 'Ho! '*3 +'Merry Christmas'
-puts str
+ puts "#{'Ho! ' *3} Merry Christmas! "
 
 # 5. Write a ruby program that perform following operations:
 #    a. Ask user his/her name
@@ -36,7 +35,7 @@ puts str
 #       "Your age is <user's age>"
 
 #---------- using method----------------
-def getAndShow()
+def getAndShow
 	puts "Enter your name"
 	name = gets()
 	puts "Enter your Age"
