@@ -1,6 +1,7 @@
 # Day 1 : Assignments
 # --------------------------------------------------------------------------
 
+<<<<<<< HEAD
 # 1. Write a method to swap two variables. 
 def swap_num(a,b)
    c=a
@@ -11,6 +12,13 @@ end
 swap_num(10,20)
 =>A=20 B=10
   
+=======
+# 1. Write a method to swap two variables.
+def method(a, b)
+  my_cde
+end
+
+>>>>>>> upstream/master
 
 
 # 2. Write any one use case of === operator.
