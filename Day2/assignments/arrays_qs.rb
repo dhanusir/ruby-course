@@ -33,7 +33,8 @@ puts push_elements_into array(arr,6)
 # Iterate on array and puts each element from array
 # using 'pop' method of Array
 def pop_from_array(arr)
-   arr.each do |i|
+   l=arr.length
+   l.each do
       num=arr.pop
       puts "#{num} is removed!"
    end
@@ -65,3 +66,5 @@ puts a[4]
 # Question5
 # str = 'Hello Ruby!!!'
 # Write code to store str into array as ['Hello fun', 'Ruby!!! fun']
+arr = str.split(/ /)
+arr.map {|i| i +" fun"
