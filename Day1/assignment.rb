@@ -4,34 +4,28 @@
 <<<<<<< HEAD
 # 1. Write a method to swap two variables. 
 def swap_num(a,b)
-   c=a
-   a=b
-   b=c
-   puts "A=#{a} B=#{b}"
+  a = a + b
+  b = a - b
+  a = a - b
+   return a, b
 end
 swap_num(10,20)
-=>A=20 B=10
+
   
 =======
 # 1. Write a method to swap two variables.
-def method(a, b)
-  my_cde
+def swap_it(a, b)
+  return b, a
 end
-
+swap_it(10,20)
 >>>>>>> upstream/master
 
 
 # 2. Write any one use case of === operator.
-str = 'fifty'
-str === 50
-=> false
-
-str === 'Fifty'
-=> false
-
-str === 'fifty'
-=> true
-
+def equals?(a, b)
+a === b
+end
+equals?(1, "one")
 
 
 # 3. Print array of alphabates using Range operator.
@@ -40,7 +34,7 @@ str === 'fifty'
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-'Ho! '*3+"Merry Christmas!"
+"#{'Ho! '*3}Merry Christmas!"
 =>Ho! Ho! Ho! Merry Christmas!
 
 
