@@ -1,4 +1,4 @@
-ruby-course
+Ruby Fundamental Course
 ===========
 
-Ruby fundamental Course conducted in Vertis.
+5 Days Ruby fundamental Course
