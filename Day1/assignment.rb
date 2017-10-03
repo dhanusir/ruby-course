@@ -1,25 +1,41 @@
 # Day 1 : Assignments
 # --------------------------------------------------------------------------
 
-# 1. Write a method to swap two variables.
-def method(a, b)
-  my_cde
+<<<<<<< HEAD
+# 1. Write a method to swap two variables. 
+def swap_num(a,b)
+  a = a + b
+  b = a - b
+  a = a - b
+   return a, b
 end
+swap_num(10,20)
 
+  
+=======
+# 1. Write a method to swap two variables.
+def swap_it(a, b)
+  return b, a
+end
+swap_it(10,20)
+>>>>>>> upstream/master
 
 
 # 2. Write any one use case of === operator.
-# Your answer here...
-
+def equals?(a, b)
+a === b
+end
+equals?(1, "one")
 
 
 # 3. Print array of alphabates using Range operator.
-# Your answer here...
-
+('a'..'h').to_a
+=> ["a","b","c","d","e","f","g","h"]
 
 
 # 4. Print 'Ho! Ho! Ho! Merry Christmas!' using string interpolation and * operator.
-# Your answer here...
+"#{'Ho! '*3}Merry Christmas!"
+=>Ho! Ho! Ho! Merry Christmas!
 
 
 
@@ -29,4 +45,13 @@ end
 #    c. Finally, print result in the form
 #       "Your name is <user's name>"
 #       "Your age is <user's age>"
-# Your answer here...
+def demo_func()
+  puts "Enter Your Name"
+  name = gets.chomp
+  puts "Enter Your Age"
+  age = gets.chomp
+  puts "hey #{name} of age #{age}"
+end
+demo_func()
+=> Hey Rakesh of age 28
+

@@ -38,7 +38,9 @@ end
 puts foo
 
 # Write your difference here:
+Code 1: Here the the loop goes for 10 times and prints prints each num from 0 to 9. foo function returns value 10 as loop goes for 10 times.
 
+Code 2: here it would same as above but the change here is as we print the return value of function foo 10 gets printed at last and puts returns nil value.
 
 
 # Assignment 3
